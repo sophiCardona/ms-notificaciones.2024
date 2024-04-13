@@ -34,3 +34,8 @@ C:\Users\Sofi\proyecto-ventas\backend\ms-notificaciones\obj\Debug\net8.0\ref\ms-
 C:\Users\Sofi\proyecto-ventas\backend\ms-notificaciones\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\Sofi\proyecto-ventas\backend\ms-notificaciones\bin\Debug\net8.0\SendGrid.dll
 C:\Users\Sofi\proyecto-ventas\backend\ms-notificaciones\bin\Debug\net8.0\StarkbankEcdsa.dll
+C:\Users\Sofi\proyecto-ventas\backend\ms-notificaciones\obj\Debug\net8.0\ms-notificaciones.sourcelink.json
+C:\Users\Sofi\proyecto-ventas\backend\ms-notificaciones\bin\Debug\net8.0\AWSSDK.Core.dll
+C:\Users\Sofi\proyecto-ventas\backend\ms-notificaciones\bin\Debug\net8.0\AWSSDK.SimpleNotificationService.dll
+C:\Users\Sofi\proyecto-ventas\backend\ms-notificaciones\bin\Debug\net8.0\DotNetEnv.dll
+C:\Users\Sofi\proyecto-ventas\backend\ms-notificaciones\bin\Debug\net8.0\Sprache.dll

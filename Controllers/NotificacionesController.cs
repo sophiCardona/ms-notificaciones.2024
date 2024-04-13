@@ -1,11 +1,14 @@
-/**using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
+
+/**
 using SendGrid;
 using SendGrid.Helpers.Mail;
+**/
+
 using ms_notificaciones.Models;
 using Amazon;
 using Amazon.SimpleNotificationService;
 using Amazon.SimpleNotificationService.Model;
-
 
 namespace ms_notificaciones.Controllers;
 
@@ -13,6 +16,7 @@ namespace ms_notificaciones.Controllers;
 [Route("[controller]")]
 public class NotificacionesController : ControllerBase
 {
+    /**
     [Route("correo-bienvenida")]
     [HttpPost]
     public async Task<ActionResult> EnviarCorreoBienvenida(ModeloCorreo datos)
@@ -64,7 +68,6 @@ public class NotificacionesController : ControllerBase
         }
     }
 
-
     [Route("enviar-correo-2fa")]
     [HttpPost]
     public async Task<ActionResult> EnviarCorreo2fa(ModeloCorreo datos)
@@ -103,14 +106,15 @@ public class NotificacionesController : ControllerBase
         return msg;
     }
 
+**/
     // Envío de SMS
 
     [Route("enviar-sms")]
     [HttpPost]
     public async Task<ActionResult> EnviarSMSNuevaClave(ModeloSms datos)
     {
-        var accessKey = Environment.GetEnvironmentVariable("ACCESS_KEY_AWS");
-        var secretKey = Environment.GetEnvironmentVariable("SECRET_KEY_AWS");
+        var accessKey = Environment.GetEnvironmentVariable("ACCESS_KEY_AWS");   // AKIAU6GDVSEK2WEZITPE
+        var secretKey = Environment.GetEnvironmentVariable("SECRET_KEY_AWS");   //26p1Kvk8Csf3D6Dp9qLhKHWLbQQZ8HxSarjx37+k
         var client = new AmazonSimpleNotificationServiceClient(accessKey, secretKey, RegionEndpoint.USEast1);
         var messageAttributes = new Dictionary<string, MessageAttributeValue>();
         var smsType = new MessageAttributeValue
@@ -140,9 +144,8 @@ public class NotificacionesController : ControllerBase
 
 
 }
-**/
 
-from flask import Flask, request
+/**from flask import Flask, request
 import os
 import boto3
 
@@ -206,9 +209,11 @@ def email():
                 'Data': subject,
             },
         },
-        Source="jeferson.arango@ucaldas.edu.co"
+        Source="sophia.cardona39931@ucaldas.edu.co"
     )
     return response
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
+
+    **/
